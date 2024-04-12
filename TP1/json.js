@@ -34,8 +34,9 @@ personaje={
       
         console.log(jugador.clubes[0]);*/
         
-    console.log(personaje.name, personaje.status)    
+  //  console.log(personaje.name, personaje.status)    
    // document.write("el persoonaje" , personaje.name , "esta" , personaje.status);
-    document.getElementByID("result").innerhtml="hola";
+   
+  // document.getElementById("result").Innerhtml="hola";
         
         
