@@ -10,7 +10,7 @@
 { console.log($array[i])} */
 
 
-//FORMAS DE BUSCAR PERSONAJES//
+/*FORMAS DE BUSCAR PERSONAJES//
 
 
 function buscar(){
@@ -29,3 +29,16 @@ function buscar(){
     .then (data=>{
             console.log(data.name)
     })}*/
+
+
+    //formas de buscar mas de un personaje//
+
+    function buscar(){
+        let valor=document.getElementById('valor').value
+    
+        fetch('https://rickandmortyapi.com/api/character/1,183')
+        .then (Response=>Response.json())
+        .then (data=>{
+                console.log(data.name,data.id,data.gender)
+               
+        })}
