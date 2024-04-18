@@ -33,33 +33,35 @@ function buscar(){
 
     //formas de buscar mas de un personaje//
 
-    function comparar(){
+   /* function comparar(){
 
-        
-        fetch('https://rickandmortyapi.com/api/character/[1,183]'+p1)
+        let p1=document.getElementById('p1').innerHTML
+       
+
+        fetch('https://rickandmortyapi.com/api/character/[0,183]'+document.getElementById('p1').innerHTML)
         .then (Response=>Response.json())
         .then (data=>{
-                data.imagen     
-        })
+                console.log(data.name)     
+                })}*/
         
       
-        fetch('https://rickandmortyapi.com/api/character/[1,183]'+p2)
+        
+        function comparar(){
+
+         let p1=document.getElementById('p1').innerHTML
+
+         fetch('https://rickandmortyapi.com/api/character/'+p1)
         .then (Response=>Response.json())
         .then (data=>{
-                data.imagen
-        })
-       /* let tipo=document.getElementById('p1').innerHTML= 
-                ` <img src="${data.imagen}"/>`
-
-        let tipo=document.getElementById('p2').innerHTML= 
-                `<img src="${data.imagen}"/>`*/
-
+                 console.log(data.origin)
+                })}
+/*
         {if (comparar(data.gender=data.gender)){
                 let tipo=document.getElementById('p1').innerHTML= 
-                ` <img src="${data.imagen}"/>`
+                ` <img src="${data.image}"/>`
         } else {
                 let tipo=document.getElementById('p2').innerHTML= 
-                `<img src="${data.imagen}"/>`   
-        }
+                `<img src="${data.image}"/>`   
+        }*/
 
-        }}
+        
