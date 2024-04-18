@@ -45,7 +45,7 @@ function buscar(){
                 })}*/
         
       
-        
+        /*
         function comparar(){
 
          let p1=document.getElementById('p1').innerHTML
@@ -64,4 +64,3 @@ function buscar(){
                 `<img src="${data.image}"/>`   
         }*/
 
-        
