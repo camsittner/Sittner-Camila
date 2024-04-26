@@ -14,8 +14,8 @@ function valor(){
             .then (Response=>Response.json())
             .then (data=>{
 
-                  document.getElementById('data[0].image').innerHTML
-                  data[1].image
+                  document.getElementById("foto").innerHTML = `<img src="${data[0].image}" alt="foto">`;
+                  document.getElementById(data[1].image)
                   
             })
   let img=document.createElement('img');
