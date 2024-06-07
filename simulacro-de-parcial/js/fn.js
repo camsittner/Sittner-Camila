@@ -22,9 +22,9 @@ let contadorvarones =0;
             if (element.gender == "female"){
                
                 document.getElementById("females").innerHTML += `<h5>${element.name.first} ${element.name.last} <h5/>`
-
                 contadormujeres++
                 document.getElementById("mujeres").innerHTML = `<h4>${contadormujeres}</h4>`
+                
                 }else{
                 document.getElementById("males").innerHTML += `<h5>${element.name.first} ${element.name.last} <h5/>`
                 contadorvarones++
